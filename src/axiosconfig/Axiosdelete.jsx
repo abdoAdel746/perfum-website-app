@@ -1,5 +1,5 @@
 import axios  from "axios"
 
 export const Axiosdelete = axios.delete({
-    baseURL: "http://localhost:8000"
+    baseURL: "https://five5-08t6.onrender.com"
 })
