@@ -56,7 +56,7 @@ export const Success = () => {
     const fetchOrderDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/get-order-details/${sessionId}`
+          `https://five5-08t6.onrender.com/get-order-details/${sessionId}`
         );
         setOrderDetails(response.data);
 
@@ -76,7 +76,7 @@ export const Success = () => {
       // Send a PATCH request to update the sold value
       const currentDataResponse = await AxiosConfig({
         method: "get",
-        url: `http://localhost:8000/items/${itemId}`,
+        url: `https://five5-08t6.onrender.com/items/${itemId}`,
       });
 
       // const updateOrders = await AxiosConfig({
@@ -97,7 +97,7 @@ export const Success = () => {
       // Step 2: Update the item with the new sold value
       const updatedDataResponse = await AxiosConfig({
         method: "patch",
-        url: `http://localhost:8000/items/${itemId}`,
+        url: `https://five5-08t6.onrender.com/items/${itemId}`,
         data: {
           sold: currentItem.sold + 1, // Increment the sold value
           stoke: currentItem.stoke - 1, // Increment the sold value

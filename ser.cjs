@@ -103,11 +103,11 @@ app.post("/create-checkout-session", async (req, res) => {
       },
 
       metadata: { order_id: uniqueOrderId, price: cartTotalPrice },
-      success_url: `http://localhost:5173/Success/?session_id={CHECKOUT_SESSION_ID}&order_id=${uniqueOrderId}&price=${cartTotalPrice}&payment_date=${encodeURIComponent(
+      success_url: `https://five5-08t6.onrender.com/Success/?session_id={CHECKOUT_SESSION_ID}&order_id=${uniqueOrderId}&price=${cartTotalPrice}&payment_date=${encodeURIComponent(
         paymentDate
       )}`,
 
-      cancel_url: "http://localhost:5173/Failed/",
+      cancel_url: "https://five5-08t6.onrender.com/Failed/",
     });
 
     res.json({ sessionId: session.id });

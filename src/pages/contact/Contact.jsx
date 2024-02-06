@@ -58,7 +58,7 @@ export const Contact = () => {
   const onSubmit = (values, { setSubmitting, resetForm }) => {
     const updateOrders = AxiosConfig({
       method: "post",
-      url: `http://localhost:8000/emails`,
+      url: `https://five5-08t6.onrender.com/emails`,
       data: {
         recipient: values.email,
         message: values.message,

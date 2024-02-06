@@ -114,7 +114,7 @@ const emailList = (props) => (
 );
 
 export const Admin_page = () => {
-  const dataProvider = jsonServerProvider("http://localhost:8000");
+  const dataProvider = jsonServerProvider("https://five5-08t6.onrender.com/");
 
   return (
     <>

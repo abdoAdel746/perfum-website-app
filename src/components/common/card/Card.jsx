@@ -139,7 +139,7 @@ export const Card = (data) => {
       // Send a PATCH request to update the sold value
       const currentDataResponse = await AxiosConfig({
         method: "get",
-        url: `http://localhost:8000/items/${itemId}`,
+        url: `https://five5-08t6.onrender.com/items/${itemId}`,
       });
 
       const currentItem = currentDataResponse.data;
@@ -147,7 +147,7 @@ export const Card = (data) => {
       // Step 2: Update the item with the new sold value
       const updatedDataResponse = await AxiosConfig({
         method: "patch",
-        url: `http://localhost:8000/items/${itemId}`,
+        url: `https://five5-08t6.onrender.com/items/${itemId}`,
         data: {
           sold: currentItem.sold + 1, // Increment the sold value
         },

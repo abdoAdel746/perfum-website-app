@@ -32,7 +32,7 @@ export const Login = () => {
     setisloading(true);
     try {
       const { data } = await AxiosConfig({
-        baseURL: "http://localhost:3000/login",
+        baseURL: "https://five5-08t6.onrender.com/login",
         method: "post",
         data: user_data,
       });
@@ -65,7 +65,7 @@ export const Login = () => {
   const fetchUserProfile = async (accessToken, userEmail) => {
     try {
       const response = await AxiosConfig({
-        baseURL: `http://localhost:3000/users?email=${userEmail}`,
+        baseURL: `https://five5-08t6.onrender.com/users?email=${userEmail}`,
         headers: { Authorization: `Bearer ${accessToken}` },
       });
 

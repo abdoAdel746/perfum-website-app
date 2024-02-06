@@ -53,7 +53,7 @@ export const Register = () => {
 
     try {
       const { data } = await AxiosConfig({
-        baseURL: "http://localhost:3000/register",
+        baseURL: "https://five5-08t6.onrender.com/register",
         method: "post",
         data: {
           ...user_data,
@@ -65,7 +65,7 @@ export const Register = () => {
 
       // Fetch the new user's ID
       const response = await AxiosConfig({
-        baseURL: `http://localhost:3000/users?email=${user_data.email}?name=${user_data.firstName}_${user_data.lastName}`,
+        baseURL: `https://five5-08t6.onrender.com/users?email=${user_data.email}?name=${user_data.firstName}_${user_data.lastName}`,
         headers: { Authorization: `Bearer ${data.accessToken}` },
       });
 

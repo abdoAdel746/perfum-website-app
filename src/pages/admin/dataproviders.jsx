@@ -1,8 +1,8 @@
 import jsonServerProvider from 'ra-data-json-server';
 import restProvider from 'ra-data-simple-rest';
 
-const dataProviderRest = restProvider('http://localhost:3000');
-const dataProviderJson = jsonServerProvider('http://localhost:8000');
+const dataProviderRest = restProvider('https://five5-08t6.onrender.com/');
+const dataProviderJson = jsonServerProvider('https://five5-08t6.onrender.com/');
 console.log('superDataProvider - update', dataProviderRest, dataProviderJson);
 
 export const superDataProvider = {

@@ -64,7 +64,7 @@ export const Placeorder = () => {
 
       // Use Axios to send a POST request
       const response = await axios.post(
-        "http://localhost:5000/create-checkout-session",
+        "https://five5-08t6.onrender.com/create-checkout-session",
         {
           // paymentMethodId: paymentMethod.id,
           cartTotalPrice: cartTotalPrice,

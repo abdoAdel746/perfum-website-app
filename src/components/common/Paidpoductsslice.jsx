@@ -26,7 +26,7 @@ const Paidpoductsslice = createSlice({
         // Order ID does not exist, add new order
         const updateOrders = AxiosConfig({
           method: "post",
-          url: `http://localhost:8000/orders`,
+          url: `https://five5-08t6.onrender.com/orders`,
           data: {
             orderId: orderId,
             usern_name: usern_name || "guest",

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./components/layout/Layout";
@@ -27,6 +27,7 @@ function App() {
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
+        { path: "/perfum-website-app", element: <Home /> },
         { path: "/Products", element: <Products /> },
         { path: "/Contact", element: <Contact /> },
         { path: "/About", element: <About /> },
