@@ -1,0 +1,182 @@
+{
+  "items": [
+    {
+      "product_name": "Ocean Mist",
+      "product_image": "/public/assets/images/products/1/1.jpg",
+      "product_image_background": "/public/assets/images/products/1/productBackgroud1.jpg",
+      "product_image_category": "/public/assets/images/products/1/categorey1.jpg",
+      "product_description": "A refreshing blend of marine notes with a hint of citrus, evoking the crisp sea breeze.",
+      "price": 200,
+      "stoke": 0,
+      "category": "EnchantingFlorals",
+      "sold": 46,
+      "arrival": "new",
+      "trend": "yes",
+      "recentview": 0,
+      "discount": 20,
+      "isFeatured": 0,
+      "isTrending": 0,
+      "isNewArrival": 0,
+      "isRecomended": 1,
+      "brand": "LuxeAura",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "product_name": "Velvet Rose",
+      "product_image": "/public/assets/images/products/2/2.png",
+      "product_image_background": "/public/assets/images/products/2/productBackgroud2.jpg",
+      "product_image_category": "/public/assets/images/products/2/category2.webp",
+      "product_description": "An elegant fusion of classic rose with subtle vanilla, delivering a timeless floral fragrance.",
+      "price": 50,
+      "stoke": 0,
+      "category": "TimelessElegance",
+      "sold": 20010,
+      "arrival": "old",
+      "trend": "yes",
+      "recentview": 1,
+      "discount": 50,
+      "isFeatured": 1,
+      "isTrending": 1,
+      "isNewArrival": 1,
+      "color": "gold",
+      "brand": "EtherealElegance",
+      "isRecomended": 1
+    },
+    {
+      "id": 3,
+      "product_name": "Citrus niae",
+      "product_image": "/public/assets/images/products/3/3.jpg",
+      "product_image_background": "/public/assets/images/products/3/productBackgroud3.jpg",
+      "product_image_category": "/public/assets/images/products/3/category3.webp",
+      "product_description": "A vibrant concoction of zesty lemon, lime, and a splash of sweet orange.",
+      "price": 1000,
+      "stoke": 0,
+      "category": "OrientalAllure",
+      "sold": 24,
+      "arrival": "new",
+      "trend": "yes",
+      "recentview": 0,
+      "discount": 50,
+      "isFeatured": 1,
+      "isTrending": 0,
+      "isNewArrival": 0,
+      "color": "gold",
+      "brand": "EtherealElegance",
+      "isRecomended": 1
+    },
+    {
+      "id": 4,
+      "product_name": "Citrus Zest",
+      "product_image": "/public/assets/images/products/4/4.jpg",
+      "product_image_background": "/public/assets/images/products/4/productBackgroud4.jpg",
+      "product_image_category": "/public/assets/images/products/4/category4.jpg",
+      "product_description": "A vibrant concoction of zesty lemon, lime, and a splash of sweet orange.",
+      "price": 1200,
+      "stoke": 0,
+      "category": "FreshSerenity",
+      "sold": 10006,
+      "arrival": "new",
+      "trend": "yes",
+      "recentview": 0,
+      "discount": 10,
+      "isFeatured": 1,
+      "isTrending": 0,
+      "isNewArrival": 0,
+      "color": "gold",
+      "brand": "OpulentoScents",
+      "isRecomended": 1
+    },
+    {
+      "id": 5,
+      "product_name": "Mystic Jasmine",
+      "product_image": "/public/assets/images/products/5/5.jpg",
+      "product_image_background": "/public/assets/images/products/5/productBackgroud5.jpg",
+      "product_image_category": "/public/assets/images/products/5/category5.jpg",
+      "product_description": "A delicate and intoxicating blend of jasmine with a touch of soft musk.",
+      "price": 200,
+      "stoke": 0,
+      "category": "ModernSpice",
+      "sold": 109,
+      "arrival": "new",
+      "trend": "yes",
+      "recentview": 1,
+      "discount": 0,
+      "isFeatured": 0,
+      "isTrending": 0,
+      "isNewArrival": 1,
+      "color": "gold",
+      "brand": "VelvetWhisper",
+      "isRecomended": 1
+    },
+    {
+      "product_name": "Mystic pros",
+      "product_image": "/public/assets/images/products/6/6.jpg",
+      "product_image_background": "/public/assets/images/products/6/productBackgroud6.jpg",
+      "product_image_category": "/public/assets/images/products/6/category6.jpg",
+      "product_description": "A delicate and intoxicating blend of jasmine with a touch of soft musk.",
+      "price": 600,
+      "stoke": 3,
+      "category": "MysticalWoods",
+      "sold": 102,
+      "arrival": "new",
+      "trend": "no",
+      "recentview": 0,
+      "discount": 0,
+      "isFeatured": 0,
+      "isTrending": 0,
+      "isNewArrival": 1,
+      "color": "gold",
+      "brand": "CelestiaFragrance",
+      "isRecomended": 1,
+      "id": 6
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "641d8b51-8cd3-4893-9373-98cfe0bdbe0d",
+      "usern_name": "abdo adel",
+      "usern_email": "aldesoky.abdo1@gmail.com",
+      "totalPrice": "600",
+      "paymentDate": "31-01-2024, 18:45:01",
+      "delivered": "yes",
+      "items": [
+        "Mystic Jasmine"
+      ],
+      "id": 1
+    },
+    {
+      "orderId": "041d8b51-8cd3-4893-9373-98cfe0bdbe0d",
+      "usern_name": "abdo adel",
+      "usern_email": "aldesoky.abdo1@gmail.com",
+      "totalPrice": "600",
+      "paymentDate": "31-01-2024, 18:45:01",
+      "delivered": "no",
+      "items": [
+        "Mystic Jasmine"
+      ],
+      "id": 2
+    },
+    {
+      "orderId": "a6235ed2-de44-466e-a174-fb3b4383fbd7",
+      "usern_name": "abdo adel",
+      "usern_email": "aldesoky.abdo1@gmail.com",
+      "totalPrice": "600",
+      "paymentDate": "02-02-2024, 00:05:00",
+      "delivered": "no",
+      "items": [
+        "Mystic Jasmine"
+      ],
+      "id": 3
+    }
+  ],
+  "emails": [
+    {
+      "recipient": "aldesoky.abdo3@gmail.com",
+      "message": "sadsadasdasd",
+      "to_namef": "abdo",
+      "to_namel": "adel",
+      "id": 1
+    }
+  ]
+}
