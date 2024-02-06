@@ -6,8 +6,8 @@
   "main": "./src/main/index.js",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
-    "dev": "vite dev",
-    "buildApp": "npm run clean && electron-builder",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
     "data": "json-server --watch ./public/data/data.json --port 8000",
     "auth": "json-server-auth --watch ./public/data/auth.json",
@@ -28,6 +28,7 @@
     "@stripe/react-stripe-js": "^2.4.0",
     "@stripe/stripe-js": "^2.2.2",
     "@types/node": "^20.10.5",
+    "@vitejs/plugin-react": "^4.2.1",
     "animejs": "^3.2.2",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.17",
