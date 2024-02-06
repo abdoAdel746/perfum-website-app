@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/public/assets/fonts/Montserrat/Montserrat-Black.ttf") format("opentype");
+}
+@font-face {
+    font-family: "Proza_Libre";
+    src: url("/public/assets/fonts/Proza_Libre/ProzaLibre-Regular.ttf") format("opentype");
+}
+
+.wedding {
+    padding: 3em 5em;
+    padding-bottom: 0;
+    overflow-x: clip;
+    height: 34em;
+    .left_wedding {
+        flex-basis: 75%;
+        flex-grow: 0;
+        position: relative;
+        svg {
+            width: 111%;
+            background: #f6f6f6;
+            border-radius: 1rem;
+            padding: 5px;
+        }
+        .circ3 {
+            height: 8em;
+            left: 38em;
+            top: 22em;
+        }
+        .boxes {
+            width: 100%;
+            height: 0 !important;
+            position: absolute;
+            opacity: 0.3;
+            left: -8em;
+        }
+        h1 {
+            color: #095073;
+            font-size: 55px;
+            font-family: Montserrat;
+            font-weight: 700;
+            line-height: 66px;
+            word-wrap: break-word;
+            letter-spacing: 3px;
+            width: 75%;
+        }
+        h2 {
+            color: black;
+            font-size: 20px;
+            font-family: "Proza_Libre";
+            font-weight: 600;
+            word-wrap: break-word;
+            margin: 3em 0 1em 0;
+            width: 40%;
+        }
+        p {
+            color: #848383;
+            font-size: 14px;
+            font-family: serif;
+            font-weight: 400;
+            word-wrap: break-word;
+            width: 75%;
+        }
+        button {
+            background-color: #161e29;
+            color: white;
+            font-size: 21px;
+            font-family: Patua One;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.84px;
+            word-wrap: break-word;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: 0;
+            margin-top: 2em;
+        }
+    }
+    .right_wedding {
+        flex-basis: 50%;
+        flex-grow: 0;
+        .absolute {
+            background: #f4dfd6;
+            z-index: -1;
+            position: absolute;
+            top: -13em;
+            right: -38em;
+            height: 160vh;
+            width: 63em;
+            transform: rotate(24deg);
+        }
+        svg {
+            position: absolute;
+            width: 25em;
+            height: 25em;
+            top: 0em;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wedding {
+        flex-wrap: wrap;
+        .right_wedding {
+            .absolute {
+                background: #f4dfd6;
+                z-index: -1;
+                position: absolute;
+                top: -62em;
+                right: -75em;
+                height: 160vh;
+                width: 63em;
+                transform: rotate(328deg);
+            }
+            img {
+                top: -12em;
+                left: 21em;
+            }
+        }
+        .left_wedding h2 {
+            margin: 1em 0 0em 0;
+        }
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    .wedding {
+        flex-wrap: wrap;
+        padding: 1rem;
+        .right_wedding {
+            .absolute {
+                background: #f4dfd6;
+                z-index: -1;
+                position: absolute;
+                top: -62em;
+                right: -75em;
+                height: 160vh;
+                width: 63em;
+                transform: rotate(328deg);
+            }
+            img {
+                display: none;
+            }
+        }
+        .left_wedding {
+            flex-basis: 100%;
+            padding: 2rem;
+            padding-top: 0;
+            h2 {
+                margin: 1em 0 0em 0;
+            }
+            h1 {
+                width: 100%;
+            }
+        }
+    }
+}

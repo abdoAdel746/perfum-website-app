@@ -1,0 +1,42 @@
+.btn_standard {
+    background-color: #161e29;
+    font-size: 21px;
+    font-family: Patua One;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.84px;
+    word-wrap: break-word;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 3em;
+    z-index: 0;
+    position: relative;
+    color: white;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    transition: color 0.5s ease-in-out;
+    &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        width: 2em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: #f4dfd6;
+        transform-origin: center;
+        transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: #161616;
+    }
+
+    &:hover::before {
+        transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+    }
+}

@@ -1,0 +1,100 @@
+.sucess {
+    margin: 20px auto;
+    color: black;
+    display: flex;
+    width: 30rem;
+    padding: 2.49806rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.33081rem;
+    border-radius: 2.49806rem;
+    background: #fff;
+    box-shadow: 0px 13.323px 39.969px 0px rgba(170, 170, 170, 0.12);
+    .sucess_up {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        border-bottom: 1px solid;
+        padding-bottom: 1rem;
+        width: 100%;
+        svg {
+            color: white;
+            background: #23a26d;
+            width: 25px;
+            height: 26px;
+            border-radius: 50%;
+            padding: 6px;
+            outline: 11px solid #2db27a21;
+        }
+        h1 {
+            color: #474747;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.66538rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.49806rem; /* 150% */
+        }
+        h2 {
+            color: #121212;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 2.49806rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 3.33081rem; /* 133.333% */
+        }
+    }
+    .success_down {
+        border-bottom: 1px solid;
+        padding-bottom: 1rem;
+        width: 100%;
+        .box_success {
+            .box_success__info {
+                justify-content: space-between;
+                display: flex;
+                font-size: 13px;
+                margin-bottom: 10px;
+                span {
+                    &:first-of-type {
+                        color: #707070;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.87356rem; /* 138.462% */
+                    }
+                    &:last-of-type {
+                        color: #121212;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 1.87356rem; /* 138.462% */
+                    }
+                }
+            }
+        }
+    }
+    button {
+        background-color: #161e29;
+        color: white;
+        font-size: 21px;
+        font-family: Patua One;
+        font-weight: 400;
+        text-transform: capitalize;
+        letter-spacing: 0.84px;
+        word-wrap: break-word;
+        padding: 10px 25px;
+        border-radius: 5px;
+        outline: 0;
+        margin-top: 2em;
+        margin: 0;
+    }
+}
+
+@media print {
+    .print-button {
+      display: none;
+    }
+  }

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("/public/assets/fonts/Poppins/Poppins-Medium.ttf") format("opentype");
+}
+
+.contact {
+    height: fit-content;
+    margin-bottom: -3em;
+    .left_contact {
+        flex-basis: 40%;
+        flex-grow: 0;
+        padding: 4em;
+        background: black;
+        color: white;
+        h1 {
+            color: #fff;
+            font-family: Poppins;
+            font-size: 33px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            line-height: normal;
+        }
+        h4 {
+            color: #c9c9c9;
+            font-family: math;
+            font-size: 16px;
+            /* font-style: normal; */
+            line-height: 2em;
+        }
+        .box {
+            margin: 5em 0;
+            width: 75%;
+            .flex {
+                gap: 10px;
+                padding: 1em 0;
+                align-items: center;
+                svg {
+                }
+                span {
+                    cursor: pointer;
+                }
+            }
+        }
+        .icons {
+            display: flex;
+            gap: 1em;
+            font-size: 26px;
+            margin-top: 2em;
+        }
+    }
+    .rigt_contact {
+        flex-basis: 70%;
+        flex-grow: 0;
+        padding: 3em;
+        .loading_btn {
+            span {
+                background-color: #ffffff;
+            }
+        }
+        .box {
+            img {
+                height: 13em;
+                right: 4em;
+                z-index: -1;
+                top: 10em;
+            }
+        }
+        label {
+            color: #8d8d8d;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 166.667% */
+        }
+        input {
+            border: 0;
+            border-bottom: 1px solid;
+            border-radius: 0;
+            outline: 0;
+            height: 4em;
+        }
+        .error {
+            color: #cf6645;
+            font-family: "Poppins";
+            font-size: 13px;
+            height: 75px;
+        }
+        button {
+            background-color: #161e29;
+            color: white;
+            font-size: 21px;
+            font-family: Patua One;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.84px;
+            word-wrap: break-word;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: 0;
+            margin-top: 0em;
+            float: right;
+            width: 8em;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 1rem;
+            font-size: 16px;
+        }
+        .flex {
+            gap: 20px;
+            .form-group {
+                flex-basis: 50%;
+                flex-grow: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact .rigt_contact .box img {
+        height: 23em;
+        right: 0em;
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    .contact {
+        flex-wrap: wrap;
+        .left_contact {
+            flex-basis: 100%;
+        }
+        .rigt_contact {
+            flex-basis: 100%;
+        }
+    }
+}

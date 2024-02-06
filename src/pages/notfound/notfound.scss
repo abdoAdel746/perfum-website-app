@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Copse";
+    src: url("/public/assets/fonts/Copse/Copse-Regular.ttf") format("opentype");
+}
+
+.error_page {
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-bottom: -4em;
+    .box {
+        background: #f4dfd6;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 25em;
+        }
+        button {
+            background-color: #161e29;
+            color: white;
+            font-size: 21px;
+            font-family: Proza_Libre;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.84px;
+            word-wrap: break-word;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: 0;
+            margin-top: 2em;
+            position: relative;
+        }
+    }
+    span {
+        color: #f4dfd6;
+        font-family: Copse;
+        font-size: 28em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0px;
+        letter-spacing: 16px;
+        text-transform: capitalize;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 9rem;
+    }
+}

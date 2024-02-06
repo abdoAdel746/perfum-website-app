@@ -1,0 +1,273 @@
+$base-color: #f4dfd6;
+$padding_container: 5rem 0 0 6rem;
+$base_text_color: #282825;
+$btn_background: #161e29;
+@font-face {
+    font-family: "GT";
+    src: url("/public/assets/fonts/GT/GT-Walsheim-Condensed-Regular-Trial-BF651b7fc730eb2.otf") format("opentype");
+}
+.single_page {
+    margin-bottom: -3em;
+    .left_single {
+        flex-basis: 50%;
+        flex-grow: 0;
+        background-color: #f4dfd6;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 2em;
+        align-items: flex-start;
+        height: 100%;
+        border-bottom-left-radius: 30em;
+        border-bottom-right-radius: 30em;
+        h2 {
+            top: 3em;
+            position: absolute;
+            left: 7em;
+            color: #1e1e1e;
+            font-family: Copse;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        button {
+            position: absolute;
+            right: 1em;
+            font-size: 3em;
+            color: #312227;
+        }
+        img {
+            width: 23em;
+            height: 33em;
+        }
+    }
+    .right_single {
+        flex-basis: 39%;
+        flex-grow: 0;
+        padding: 1em 4em;
+        .box {
+            button {
+                background-color: #161e29;
+                color: white;
+                font-size: 21px;
+                font-family: Proza_Libre;
+                font-weight: 400;
+                text-transform: capitalize;
+                letter-spacing: 0.84px;
+                word-wrap: break-word;
+                padding: 10px 25px;
+                border-radius: 5px;
+                outline: 0;
+                margin: 2em 0;
+            }
+            &:nth-of-type(1) {
+                h1 {
+                    color: #1e1e1e;
+
+                    font-family: Proza_Libre;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                h3 {
+                    color: #686363;
+                    font-family: GT;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                p {
+                    color: #686363;
+                    font-family: GT Walsheim Pro;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 1em;
+                }
+            }
+            &:nth-of-type(2) {
+                margin: 4em 0;
+                h2 {
+                    font-family: "Proza_Libre";
+                }
+                p {
+                    color: #686363;
+                    font-family: GT Walsheim Pro;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+            &:nth-of-type(3) {
+                .upper_box {
+                    align-items: center;
+                    justify-content: space-between;
+                    div {
+                        span {
+                            &:nth-of-type(1) {
+                                color: #686363;
+                                font-family: GT Walsheim Pro;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            &:nth-of-type(2) {
+                                color: #1e1e1e;
+                                font-family: GT Walsheim Pro;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: normal;
+                                margin-left: 8px;
+                            }
+                        }
+                        &:last-of-type {
+                            color: #1e1e1e;
+                            font-family: GT Walsheim Pro;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+                .down_box {
+                    justify-content: space-between;
+                    margin: 2em 0;
+                    .flex {
+                        display: flex;
+                        width: 133px;
+                        padding: 15px 20px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        border-radius: 8px;
+                        border: 1px solid #686363;
+                        span {
+                            &:nth-of-type(1) {
+                                color: #1e1e1e;
+                                font-family: GT Walsheim Pro;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            &:nth-of-type(2) {
+                                color: #686363;
+                                font-family: GT Walsheim Pro;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(4) {
+                .flex {
+                    &:nth-of-type(1) {
+                        gap: 10px;
+                        align-items: center;
+                        span {
+                            &:nth-of-type(1) {
+                                color: #686363;
+                                font-family: GT Walsheim Pro;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            &:nth-of-type(2) {
+                                color: #1e1e1e;
+                                font-family: GT Walsheim Pro;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+            }
+            &:nth-of-type(6) {
+                h2 {
+                    border-bottom: 1px solid black;
+                    padding: 0.5rem 0;
+                    margin-bottom: 1em;
+                }
+                p {
+                    color: #1e1e1e;
+                    font-family: GT Walsheim Pro;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 21px */
+                }
+                ul {
+                    list-style: disc;
+                    margin-left: 2em;
+                    margin-top: 1em;
+                    color: #1e1e1e;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    line-height: 150%;
+                }
+                li {
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .single_page {
+        gap: 1em;
+        .right_single {
+            padding: 0;
+            padding-top: 1em;
+            .box:nth-of-type(3) .down_box {
+                gap: 10px;
+
+                .flex {
+                    width: 33%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    .single_page {
+        gap: 1em;
+        flex-wrap: wrap;
+        .right_single {
+            padding-top: 1em;
+            flex-basis: 100%;
+            padding: 3em;
+            width: 100%;
+            .box:nth-of-type(3) .down_box {
+                gap: 10px;
+
+                .flex {
+                    width: 33%;
+                }
+            }
+        }
+        .left_single {
+            flex-basis: 100%;
+        }
+    }
+}

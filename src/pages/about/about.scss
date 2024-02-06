@@ -1,0 +1,214 @@
+.About_Us {
+    margin-top: 2em;
+    h1 {
+        color: black;
+        font-size: 45px;
+        font-family: Inter;
+        font-weight: 600;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    h1 + img {
+        width: 250px;
+        height: 40px;
+        margin: 20px auto;
+    }
+    .flex {
+        padding: 11em;
+        &:nth-of-type(2) {
+            padding-top: 7em;
+            .right_about {
+                justify-content: start;
+
+                .circle_path {
+                    left: 4em;
+                    .box {
+                        transform: rotate(11deg) !important;
+                        background-image: url(/public/assets/images/gift2.png);
+                    }
+                }
+                .frame {
+                    &:nth-of-type(2) {
+                        top: 2em;
+                        left: 2em;
+                    }
+                    &:nth-of-type(3) {
+                        top: 2em;
+                        right: 13em;
+                    }
+                    &:nth-of-type(4) {
+                        bottom: 1em;
+                        left: 0;
+                    }
+                }
+            }
+            h2 {
+                text-align: right;
+            }
+        }
+        &:nth-of-type(3) {
+            .box {
+                transform: rotate(11deg) !important;
+                background-image: url(/public/assets/images/gift3.png);
+            }
+        }
+
+        .left_about {
+            flex-basis: 50%;
+            flex-grow: 0;
+            h2 {
+                // Perfum number one is fantastic perfum
+                color: black;
+                font-size: 45px;
+                font-family: Inter;
+                font-weight: 600;
+                word-wrap: break-word;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background: #f4dfd6;
+                    left: 0;
+                    top: 3em;
+                }
+            }
+            p {
+                color: #848383;
+                font-size: 14px;
+                font-family: Proza_Libre;
+                font-weight: 400;
+                word-wrap: break-word;
+                margin-top: 3em;
+            }
+            button {
+                background-color: #161e29;
+                color: white;
+                font-size: 21px;
+                font-family: Proza_Libre;
+                font-weight: 400;
+                text-transform: capitalize;
+                letter-spacing: 0.84px;
+                word-wrap: break-word;
+                padding: 10px 25px;
+                border-radius: 5px;
+                outline: 0;
+                margin-top: 2em;
+                position: relative;
+                width: 35%;
+                .circle {
+                    position: absolute;
+                    width: 3em;
+                    height: 3em;
+                    right: -18px;
+                    top: 30px;
+                    border-radius: 50%;
+                    background: white;
+                }
+            }
+        }
+
+        .right_about {
+            flex-basis: 50%;
+            flex-grow: 0;
+            position: relative;
+            display: flex;
+            justify-content: end;
+            .circle_path {
+                filter: drop-shadow(2px 8px 3px rgba(50, 50, 0, 0.5));
+                position: absolute;
+                top: 2em;
+                right: 4em;
+                .box {
+                    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+                    background-image: url(/public/assets/images/gift1.png);
+                    height: 21em;
+                    width: 21em;
+                    background-size: cover;
+                    transform: rotate(349deg);
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        filter: drop-shadow(2px 6px 3px rgba(50, 50, 0, 0.5));
+                        z-index: -1;
+                    }
+                }
+            }
+
+            .frame {
+                position: absolute;
+                &:nth-of-type(2) {
+                    top: 2em;
+                    left: 10em;
+                }
+                &:nth-of-type(3) {
+                    top: 2em;
+                    right: 5em;
+                }
+                &:nth-of-type(4) {
+                    bottom: 1em;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .About_Us .flex {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .About_Us {
+        .flex {
+            flex-wrap: wrap;
+            padding: 10rem;
+            row-gap: 7em;
+
+            .left_about {
+                flex-basis: 100%;
+                order: 2;
+                button {
+                    width: 55%;
+                }
+            }
+            .right_about {
+                flex-basis: 100%;
+                order: 1;
+            }
+        }
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    .About_Us {
+        .flex {
+            flex-wrap: wrap;
+            padding: 1rem;
+            row-gap: 7em;
+
+            .left_about {
+                flex-basis: 100%;
+                order: 2;
+                button {
+                    width: 55%;
+                }
+            }
+            .right_about {
+                flex-basis: 100%;
+                order: 1;
+                width: 100%;
+                 .circle_path .box {
+                    height: 17em;
+                    width: 17em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.cartIcon {
+    cursor: pointer;
+    .cartBadge {
+        background: rgb(57 50 50);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        top: -8px;
+        right: -7px;
+        z-index: 2;
+        position: absolute;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-family: monospace;
+        padding: 11px;
+    }
+    .cart_nav {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        overflow: auto;
+        z-index: 99999;
+        background: white;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        .close {
+            justify-content: right;
+            margin: 2em;
+            width: 90%;
+            margin-top: 0;
+            svg {
+                width: 3em;
+                height: 3em;
+                background: #3f4545;
+                border-radius: 50%;
+                padding: 11px;
+                color: white;
+                color: white;
+                position: fixed;
+                right: 1em;
+                z-index: 9999;
+            }
+            .flex {
+                flex-basis: 100%;
+            }
+        }
+    }
+    .body {
+        display: flex;
+        column-gap: 3em;
+        row-gap: 13em;
+        justify-content: center;
+        margin-top: 8em;
+        flex-wrap: wrap;
+        .down_card {
+            flex-basis: 40%;
+            .product {
+                width: 100%;
+            }
+        }
+        .remove_wishlist {
+            background-color: #161e29;
+            color: white;
+            font-size: 21px;
+            font-family: Patua One;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.84px;
+            word-wrap: break-word;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: 0;
+            position: fixed;
+            right: 15px;
+            bottom: 7px;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    .cartIcon .body .down_card {
+        flex-basis: 100%;
+    }
+}

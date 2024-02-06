@@ -1,0 +1,67 @@
+.order {
+    margin: 20px auto;
+    color: white;
+    box-shadow: 0px 13.323px 39.969px 0px rgba(170, 170, 170, 0.12);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 20em;
+    background: #33527e;
+    h1 {
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0rem;
+        letter-spacing: 0.075rem;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+    .box {
+        border-bottom: 1px solid;
+        padding: 16px;
+        margin-bottom: 1em;
+        ul {
+            li {
+                color: #eeeeee;
+                display: flex;
+                justify-content: space-between;
+                text-transform: capitalize;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .total_price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        button {
+            display: flex;
+            width: 8em;
+            height: 3em;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            color: #161e29;
+            font-size: 16px;
+            font-family: Patua One;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.84px;
+            word-wrap: break-word;
+            padding: 10px 25px;
+            border-radius: 5px;
+            outline: 0;
+            margin-top: 2rem;
+        }
+        p {
+            span {
+                font-size: 1.5rem;
+                font-weight: 600;
+                font-family: "Inter";
+                margin-left: 9px;
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+$base-color: #f4dfd6;
+@font-face {
+    font-family: "Inter";
+    src: url("/public/assets/fonts/Inter/Inter-Black.ttf") format("opentype");
+}
+.product {
+    width: 33%;
+    height: fit-content;
+    .up {
+        background-color: $base-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        height: 13em;
+        img {
+            position: absolute;
+            bottom: 0;
+            width: auto;
+            height: 20em;
+            filter: drop-shadow(1px 18px 15px #b5b5b5);
+        }
+        .discount {
+            position: absolute;
+            right: -16px;
+            bottom: -13px;
+            background: #e04412;
+            border-radius: 69%;
+            width: 3em;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            color: #ffffff;
+            font-size: 13px;
+        }
+    }
+    .down {
+        box-shadow: 0px 10px 14px 0px rgb(0 0 0 / 11%);
+        padding: 1em 0;
+        h5 {
+            text-align: center;
+            color: black;
+            font-size: 12px;
+            font-family: Inter 1p;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.48px;
+            word-wrap: break-word;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-family: Inter;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 0.8px;
+            word-wrap: break-word;
+        }
+        .box {
+            justify-content: center;
+            .price {
+                width: 70%;
+                justify-content: space-between;
+                margin-top: 2em;
+                align-items: stretch;
+                flex-basis: auto;
+                .left__price {
+                    .price_now {
+                        font-weight: bold;
+                        word-spacing: 5px;
+                        font-size: 20px;
+                        margin-top: 11px;
+                        font-family: "Inter";
+                        .price_after_discount {
+                        }
+                        .real_price {
+                            margin-left: 10px;
+                            font-size: 11px;
+                            color: #919ca7;
+                        }
+                    }
+                    .outofstock {
+                        background: #e04412;
+                        color: white;
+                        border-radius: 4px;
+                        text-align: center;
+                        margin-top: 10px;
+                        padding: 3px;
+                    }
+                }
+                .right {
+                    text-align: -webkit-right;
+                    svg {
+                        font-size: 2em;
+                        margin-bottom: 15px;
+                    }
+                    .heart {
+                    }
+                    .add {
+                        z-index: 1;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+
+                        &:active {
+                            cursor: pointer;
+                            animation: jelly 0.5s;
+                        }
+
+                        @keyframes jelly {
+                            0%,
+                            100% {
+                                transform: scale(1, 1);
+                            }
+                            25% {
+                                transform: scale(0.5, 1.1);
+                            }
+                            50% {
+                                transform: scale(1.1, 0.5);
+                            }
+                            75% {
+                                transform: scale(0.95, 1.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

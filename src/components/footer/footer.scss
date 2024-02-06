@@ -1,0 +1,141 @@
+$base-color: #f4dfd6;
+$padding_container: 5rem 0 0 6rem;
+$base_text_color: #282825;
+$btn_background: #161e29;
+
+footer {
+    bottom: -35px;
+    // margin-top: 8em;
+    background: $base-color;
+    padding: 6rem 6rem 0 6rem;
+    height: 38em;
+    .flex {
+        gap: 8%;
+        .box {
+            flex-basis: 33%;
+            flex-grow: 0;
+            &:nth-of-type(1) {
+                img {
+                    width: 20em;
+                }
+                .box__inner {
+                    padding-left: 3em;
+                    padding-top: 2em;
+                    p {
+                        color: black;
+                        font-size: 16px;
+                        font-family: Inter;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                        line-height: 35px;
+                        letter-spacing: 0.8px;
+                        word-wrap: break-word;
+                    }
+                    .icons {
+                        display: flex;
+                        gap: 1em;
+                        font-size: 26px;
+                        margin-top: 2em;
+                    }
+                }
+            }
+            &:nth-of-type(2) {
+                .in__box {
+                    padding-left: 3em;
+                    padding-top: 3em;
+                    .in__box__cont {
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+            &:nth-of-type(3) {
+                img {
+                    width: 12em;
+                    margin: 30px auto;
+                }
+            }
+            p {
+                color: black;
+                font-size: 13px;
+                font-family: Inter;
+                font-weight: 300;
+                text-transform: capitalize;
+                line-height: 26px;
+                letter-spacing: 0.52px;
+                word-wrap: break-word;
+            }
+            h1 {
+                // BRANCHES
+                color: black;
+                font-size: 23px;
+                font-family: Inter;
+                font-weight: 700;
+                text-transform: capitalize;
+                letter-spacing: 0.92px;
+                word-wrap: break-word;
+            }
+            h2 {
+                color: black;
+                font-size: 26px;
+                font-family: Kaisei Decol;
+                font-weight: 700;
+                text-transform: capitalize;
+                line-height: 33px;
+                letter-spacing: 1.04px;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        padding: 6rem 0rem 0 1rem;
+        .flex {
+            gap: 19px;
+            .box:nth-of-type(2) .in__box {
+                padding-left: 0em;
+                padding-top: 2em;
+            }
+            .box:nth-of-type(3) img {
+                width: 8em;
+            }
+            .box {
+                h1 {
+                    font-size: 19px;
+                }
+                h2 {
+                    font-size: 23px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    footer {
+        padding: 6rem 0rem 0 1rem;
+        height: auto;
+        .flex {
+            flex-wrap: wrap;
+            gap: 19px;
+            padding: 1rem;
+            row-gap: 6em;
+            .box:nth-of-type(2) .in__box {
+                padding-left: 0em;
+                padding-top: 2em;
+            }
+            .box:nth-of-type(3) img {
+                width: 8em;
+            }
+            .box {
+                h1 {
+                    font-size: 19px;
+                }
+                h2 {
+                    font-size: 23px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

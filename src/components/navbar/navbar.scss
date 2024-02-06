@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/public/assets/fonts/Raleway/Raleway-ExtraLight.ttf") format("opentype");
+}
+
+.header_shadow {
+    box-shadow: -2px 5px 22px -5px rgb(0 0 0 / 14%);
+    background: #f8f8f8;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    height: 9em;
+    // position: sticky;
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    nav {
+        margin: auto 6rem;
+        font-family: "Raleway", sans-serif;
+        svg {
+            color: #544c48;
+        }
+        .up {
+            height: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 28%;
+            .inline-flex {
+                margin-right: 14%;
+            }
+            .drop_menu {
+                background: #0c0c0c;
+                border-radius: 10px;
+                color: whitesmoke;
+                padding: 1em;
+                right: 2em;
+                top: 3em;
+                text-transform: capitalize;
+                filter: drop-shadow(0px 4px 7px #00000010);
+                font-family: "Poppins";
+                width: 15em;
+                z-index: 1;
+                h1 {
+                    border-bottom: 1px solid;
+                    padding: 8px;
+                    padding-bottom: 10px;
+                }
+                ul {
+                    padding: 1em;
+                    li {
+                        padding: 10px;
+                    }
+                    .logout_button {
+                        cursor: pointer;
+                    }
+                }
+                h2 {
+                    border-top: 1px solid;
+                    padding-top: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        nav {
+            margin: auto 3rem;
+            .up {
+                gap: 15%;
+            }
+        }
+    }
+    @media screen and (min-width: 365px) and (max-width: 767px) {
+        padding-bottom: 1em;
+        height: fit-content;
+        nav {
+            margin: 0;
+            .down {
+                font-size: 0.7rem;
+                padding: 7px;
+
+                img {
+                    width: 3em;
+                }
+            }
+
+            .up {
+                gap: 5%;
+                .inline-flex {
+                    margin-right: 0;
+                }
+                img {
+                    width: 10em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.oldorders {
+    padding: 2em 5em;
+    .err_ord {
+        font-size: 2em;
+        text-align: center;
+        margin: 5em;
+    }
+    .oldorders__items {
+        margin: 2em 0;
+        border-bottom: 1px solid;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        padding-bottom: 2em;
+        h3 {
+            font-size: 2em;
+            font-family: "Inter";
+            letter-spacing: 4px;
+            margin-bottom: 1em;
+        }
+        .box {
+            display: flex;
+            .left {
+                flex-basis: 70%;
+                flex-grow: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                justify-content: space-between;
+                row-gap: 2em;
+                padding: 3em;
+                .left_order {
+                    flex-basis: 40%;
+                    background: #fff;
+                    box-shadow: 0px 8px 26px 0px rgb(170 170 170 / 34%);
+                    height: -moz-fit-content;
+                    height: fit-content;
+                    padding: 1em;
+                    border-radius: 5px;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    height: 12em;
+                    img {
+                        width: 5em;
+                        height: 8em;
+                    }
+                }
+            }
+            .right {
+                flex-basis: 30%;
+                flex-grow: 0;
+                .sucess {
+                    width: 21rem;
+                    .success_down .box_success .box_success__info span:last-of-type {
+                        color: #121212;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 700;
+                        text-align: right;
+                        line-height: 1.87356rem;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .oldorders {
+        padding: 2em 2em;
+        .oldorders__items .box {
+            .left {
+                padding: 1em;
+            }
+            .right .sucess {
+                width: 20rem;
+                padding: 2rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 365px) and (max-width: 767px) {
+    .main h1 {
+        font-size: 40px;
+    }
+    .oldorders {
+        padding: 2em 2em;
+        .oldorders__items .box {
+            flex-wrap: wrap;
+            .left {
+                padding: 1em;
+                flex-basis: 100%;
+            }
+            .right .sucess {
+                width: 20rem;
+                padding: 2rem;
+            }
+        }
+    }
+}
